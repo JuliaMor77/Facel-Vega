@@ -144,6 +144,11 @@ ul li::marker {
     align-items: center;
     z-index: 2; /* Ensure it's above the overlay */
 }
+iframe {
+    width: 100%;  /* Make the iframe take the full width of its container */
+    height: 100%; /* Make the iframe take the full height of its container */
+    border: 0;    /* Remove the border around the iframe */
+}
 
 #back-to-top {
     position: fixed;
