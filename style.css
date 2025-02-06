@@ -176,14 +176,21 @@ iframe {
     border-radius: 5px; 
 }
 
+/* For small screens (mobile phones) */
 @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
+    body {
+        font-size: 14px; /* Adjust font size for readability */
     }
-    .hero {
-        font-size: 2em;
+
+    .map-container {
+        width: 100%; /* Make the map container take the full width */
+        height: 200px; /* Adjust height for smaller screens */
     }
-    .content {
-        text-align: center;
+}
+
+/* For larger screens (tablets, desktops) */
+@media (min-width: 769px) {
+    body {
+        font-size: 16px; /* Standard font size for desktop */
     }
 }
